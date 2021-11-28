@@ -1,0 +1,18 @@
+{
+
+  "manifest_version": 2,
+  "name": "AndroidXRef.ext",
+  "version": "1.0",
+
+  "description": "A plugin that help you visit",
+  "content_scripts": [
+    {
+      "matches": ["*://*.androidxref.com/*"],
+      "js": ["app.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "app.css"
+  ]
+
+}
