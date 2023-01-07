@@ -1,5 +1,6 @@
 (function () {
-    if (!location.href.endsWith(".java")) {
+    let url = new URL(location.href);
+    if (!url.pathname.endsWith(".java")) {
         // only works for java content right now.
         return;
     }
